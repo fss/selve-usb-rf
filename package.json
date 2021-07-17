@@ -1,0 +1,29 @@
+{
+  "name": "selve-usb-rf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fss/selve-usb-rf.git"
+  },
+  "keywords": [
+    "usb-rf",
+    "selve",
+    "blinds"
+  ],
+  "author": "Rafał Drąg [FSS]",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fss/selve-usb-rf/issues"
+  },
+  "homepage": "https://github.com/fss/selve-usb-rf#readme",
+  "dependencies": {
+    "restify": "^8.5.1",
+    "restify-errors": "^8.0.2",
+    "serialport": "^9.2.0"
+  }
+}
