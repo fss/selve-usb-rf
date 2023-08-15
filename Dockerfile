@@ -1,14 +1,15 @@
-FROM node:16-slim
+FROM node:hydrogen-slim
+
+# install build dependencies
+RUN apt-get update && apt-get -y install python3 build-essential
 
 # Create app directory
 WORKDIR /usr/src/app
 
-RUN apt-get update && apt-get -y install python3 build-essential
-
-# Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
 
+# install all dependencies
 RUN npm ci
 
 # Bundle app source
